@@ -16,9 +16,20 @@ class OverviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
+    @IBAction func didSwipeRight(_ sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            openMenu()
+        }
+    }
+    
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
+        openMenu()
+    }
+    
+    func openMenu() {
         guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
         menuViewController.didTapMenuType = { menuType in
             self.transitionToNew(menuType)

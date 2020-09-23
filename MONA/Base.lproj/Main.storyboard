@@ -18,6 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="G31-5E-DDg" appends="YES" id="08B-JC-wEN"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Übersicht" id="eOI-FP-dJ8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="lXb-9H-TiX">
@@ -29,6 +33,11 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="G31-5E-DDg">
+                    <connections>
+                        <action selector="didSwipeRight:" destination="BYZ-38-t0r" id="pXE-PD-yBD"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
@@ -348,7 +357,7 @@
         <image name="categories" width="50" height="50"/>
         <image name="expenses" width="50" height="50"/>
         <image name="income" width="50" height="50"/>
-        <image name="menu" width="50" height="50"/>
+        <image name="menu" width="23" height="23"/>
         <image name="overview" width="50" height="50"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
