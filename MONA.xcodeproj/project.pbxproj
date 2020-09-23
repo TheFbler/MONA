@@ -14,6 +14,7 @@
 		7127CF80251935D3008B7955 /* MONA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7127CF7E251935D3008B7955 /* MONA.xcdatamodeld */; };
 		7127CF82251935D4008B7955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF81251935D4008B7955 /* Assets.xcassets */; };
 		7127CF85251935D4008B7955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF83251935D4008B7955 /* LaunchScreen.storyboard */; };
+		717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */; };
 		71A2398A251B9B8A0066C9FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23989251B9B8A0066C9FE /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		7127CF81251935D4008B7955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7127CF84251935D4008B7955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7127CF86251935D4008B7955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		71A23989251B9B8A0066C9FE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				7127CF77251935D3008B7955 /* SceneDelegate.swift */,
 				71A23989251B9B8A0066C9FE /* MenuViewController.swift */,
 				7127CF79251935D3008B7955 /* OverviewViewController.swift */,
+				717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */,
 				7127CF7B251935D3008B7955 /* Main.storyboard */,
 				7127CF81251935D4008B7955 /* Assets.xcassets */,
 				7127CF83251935D4008B7955 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				7127CF80251935D3008B7955 /* MONA.xcdatamodeld in Sources */,
 				71A2398A251B9B8A0066C9FE /* MenuViewController.swift in Sources */,
 				7127CF7A251935D3008B7955 /* OverviewViewController.swift in Sources */,
+				717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */,
 				7127CF76251935D3008B7955 /* AppDelegate.swift in Sources */,
 				7127CF78251935D3008B7955 /* SceneDelegate.swift in Sources */,
 			);
