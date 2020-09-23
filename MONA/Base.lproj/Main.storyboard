@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Übersicht" id="eOI-FP-dJ8">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" style="plain" id="lXb-9H-TiX">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="lXb-9H-TiX">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="didTapMenu:" destination="BYZ-38-t0r" id="5fi-fi-gTV"/>
