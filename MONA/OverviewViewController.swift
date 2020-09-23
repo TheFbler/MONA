@@ -19,13 +19,13 @@ class OverviewViewController: UIViewController {
     }
 
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
-        guard let overviewViewController = storyboard?.instantiateViewController(withIdentifier: "OverviewView") as? MenuViewController else { return }
-        overviewViewController.didTapMenuType = { menuType in
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
+        menuViewController.didTapMenuType = { menuType in
             self.transitionToNew(menuType)
         }
-        overviewViewController.modalPresentationStyle = .overCurrentContext
-        overviewViewController.transitioningDelegate = self
-        present(overviewViewController, animated: true)
+        menuViewController.modalPresentationStyle = .overCurrentContext
+        menuViewController.transitioningDelegate = self
+        present(menuViewController, animated: true)
     }
 
     func transitionToNew(_ menuType: MenuType) {
