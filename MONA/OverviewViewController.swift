@@ -29,23 +29,28 @@ class OverviewViewController: UIViewController {
     }
 
     func transitionToNew(_ menuType: MenuType) {
-        let title = String(describing: menuType).capitalized
-        self.title = title
-
         topView?.removeFromSuperview()
         switch menuType {
-        case .profile:
-            let view = UIView()
-            view.backgroundColor = .yellow
-            view.frame = self.view.bounds
-            self.view.addSubview(view)
-            self.topView = view
-        case .camera:
-            let view = UIView()
-            view.backgroundColor = .blue
-            view.frame = self.view.bounds
-            self.view.addSubview(view)
-            self.topView = view
+        case .overview:
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "OverviewViewController") as! OverviewViewController
+            self.view.addSubview(vc.view)
+            self.title = "Übersicht"
+        case .expenses:
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "ExpensesViewController") as! ExpensesViewController
+            self.view.addSubview(vc.view)
+            self.title = "Ausgaben"
+        case .category:
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+            self.view.addSubview(vc.view)
+            self.title = "Kategorien"
+        case .earnings:
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "EarningsViewController") as! EarningsViewController
+            self.view.addSubview(vc.view)
+            self.title = "Einnahmen"
+        case .about:
+            let vc = self.storyboard!.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+            self.view.addSubview(vc.view)
+            self.title = "Über"
         default:
             break
         }
