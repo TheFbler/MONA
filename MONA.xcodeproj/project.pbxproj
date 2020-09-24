@@ -21,6 +21,10 @@
 		717896F1251BCEFB001E3AD4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896F0251BCEFB001E3AD4 /* AboutViewController.swift */; };
 		71A2398A251B9B8A0066C9FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A23989251B9B8A0066C9FE /* MenuViewController.swift */; };
 		71EB08F8251CEE210023DD66 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB08F7251CEE210023DD66 /* OverviewViewController.swift */; };
+		71EB08FF251D12CC0023DD66 /* Position+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB08FB251D12CC0023DD66 /* Position+CoreDataClass.swift */; };
+		71EB0900251D12CC0023DD66 /* Position+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB08FC251D12CC0023DD66 /* Position+CoreDataProperties.swift */; };
+		71EB0901251D12CC0023DD66 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB08FD251D12CC0023DD66 /* Category+CoreDataClass.swift */; };
+		71EB0902251D12CC0023DD66 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB08FE251D12CC0023DD66 /* Category+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		717896F0251BCEFB001E3AD4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		71A23989251B9B8A0066C9FE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		71EB08F7251CEE210023DD66 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		71EB08FB251D12CC0023DD66 /* Position+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Position+CoreDataClass.swift"; path = "MONA/Entitys/Position+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71EB08FC251D12CC0023DD66 /* Position+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Position+CoreDataProperties.swift"; path = "MONA/Entitys/Position+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71EB08FD251D12CC0023DD66 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataClass.swift"; path = "MONA/Entitys/Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71EB08FE251D12CC0023DD66 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Category+CoreDataProperties.swift"; path = "MONA/Entitys/Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		7127CF69251935D3008B7955 = {
 			isa = PBXGroup;
 			children = (
+				71EB08FB251D12CC0023DD66 /* Position+CoreDataClass.swift */,
+				71EB08FC251D12CC0023DD66 /* Position+CoreDataProperties.swift */,
+				71EB08FD251D12CC0023DD66 /* Category+CoreDataClass.swift */,
+				71EB08FE251D12CC0023DD66 /* Category+CoreDataProperties.swift */,
 				7127CF74251935D3008B7955 /* MONA */,
 				7127CF73251935D3008B7955 /* Products */,
 			);
@@ -162,13 +174,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EB0900251D12CC0023DD66 /* Position+CoreDataProperties.swift in Sources */,
+				71EB08FF251D12CC0023DD66 /* Position+CoreDataClass.swift in Sources */,
 				7127CF80251935D3008B7955 /* MONA.xcdatamodeld in Sources */,
 				71EB08F8251CEE210023DD66 /* OverviewViewController.swift in Sources */,
 				717896E5251BBA78001E3AD4 /* ExpensesViewController.swift in Sources */,
 				71A2398A251B9B8A0066C9FE /* MenuViewController.swift in Sources */,
 				7127CF7A251935D3008B7955 /* ContainerViewController.swift in Sources */,
+				71EB0902251D12CC0023DD66 /* Category+CoreDataProperties.swift in Sources */,
 				717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */,
 				717896E9251BC0EE001E3AD4 /* EarningsViewController.swift in Sources */,
+				71EB0901251D12CC0023DD66 /* Category+CoreDataClass.swift in Sources */,
 				7127CF76251935D3008B7955 /* AppDelegate.swift in Sources */,
 				717896EC251BC0FC001E3AD4 /* CategoryViewController.swift in Sources */,
 				717896F1251BCEFB001E3AD4 /* AboutViewController.swift in Sources */,
