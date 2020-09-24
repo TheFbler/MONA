@@ -9,35 +9,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Übersicht-->
+        <!--Container-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="OverviewViewController" id="BYZ-38-t0r" customClass="OverviewViewController" customModule="MONA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerViewController" id="BYZ-38-t0r" customClass="ContainerViewController" customModule="MONA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="G31-5E-DDg" appends="YES" id="08B-JC-wEN"/>
-                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Übersicht" id="eOI-FP-dJ8">
+                    <navigationItem key="navigationItem" title="Container" id="eOI-FP-dJ8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="lXb-9H-TiX">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <action selector="didTapMenu:" destination="BYZ-38-t0r" id="5fi-fi-gTV"/>
+                                <action selector="didTapMenu:" destination="BYZ-38-t0r" id="iIL-dB-8u9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="G31-5E-DDg">
-                    <connections>
-                        <action selector="didSwipeRight:" destination="BYZ-38-t0r" id="pXE-PD-yBD"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
@@ -275,6 +267,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rn-VX-NAf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="854"/>
+        </scene>
+        <!--Overview View Controller-->
+        <scene sceneID="dRc-6M-C65">
+            <objects>
+                <viewController storyboardIdentifier="OverviewViewController" id="44Q-yb-w3X" customClass="OverviewViewController" customModule="MONA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gpr-Eq-Pcx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cc6-tO-S7e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HzI-6S-2eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="3710"/>
         </scene>
         <!--Einnahmen-->
         <scene sceneID="alF-IH-6zO">
