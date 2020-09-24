@@ -19,6 +19,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SM4-Uz-umi" appends="YES" id="pfD-AA-9cD"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Container" id="eOI-FP-dJ8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="lXb-9H-TiX">
@@ -30,6 +33,11 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="SM4-Uz-umi" userLabel="MenuSwipe">
+                    <connections>
+                        <action selector="userDidSwipe:" destination="BYZ-38-t0r" id="ibr-pg-zma"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>

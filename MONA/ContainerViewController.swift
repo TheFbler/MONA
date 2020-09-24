@@ -22,9 +22,11 @@ class ContainerViewController: UIViewController {
         self.title = "Übersicht"
     }
 
-    @IBAction func didSwipeRight(_ sender: UISwipeGestureRecognizer) {
+    @IBAction func userDidSwipe(_ sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
-            openMenu()
+            if sender.direction == .right {
+                openMenu()
+            }
         }
     }
     
@@ -41,9 +43,13 @@ class ContainerViewController: UIViewController {
         menuViewController.transitioningDelegate = self
         present(menuViewController, animated: true)
     }
+    
+    func closeMenu() {
+        topView?.removeFromSuperview()
+    }
 
     func transitionToNew(_ menuType: MenuType) {
-        topView?.removeFromSuperview()
+        closeMenu()
         switch menuType {
         case .overview:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "OverviewViewController") as! OverviewViewController
