@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="categoryToPos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Position" inverseName="posToCategory" inverseEntity="Position"/>
+    </entity>
+    <entity name="Position" representedClassName="Position" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="income" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="posToCategory" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Category" inverseName="categoryToPos" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="240.27734375" positionY="-142.20703125" width="128" height="73"/>
+        <element name="Position" positionX="-54" positionY="0" width="128" height="103"/>
+    </elements>
 </model>
