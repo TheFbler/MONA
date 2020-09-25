@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7118D6CC251E3C3F00D9B61E /* MONA.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF7E251935D3008B7955 /* MONA.xcdatamodeld */; };
 		7127CF76251935D3008B7955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127CF75251935D3008B7955 /* AppDelegate.swift */; };
 		7127CF78251935D3008B7955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127CF77251935D3008B7955 /* SceneDelegate.swift */; };
 		7127CF7A251935D3008B7955 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127CF79251935D3008B7955 /* ContainerViewController.swift */; };
 		7127CF7D251935D3008B7955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF7B251935D3008B7955 /* Main.storyboard */; };
-		7127CF80251935D3008B7955 /* MONA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7127CF7E251935D3008B7955 /* MONA.xcdatamodeld */; };
 		7127CF82251935D4008B7955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF81251935D4008B7955 /* Assets.xcassets */; };
 		7127CF85251935D4008B7955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF83251935D4008B7955 /* LaunchScreen.storyboard */; };
 		717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */; };
@@ -161,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7118D6CC251E3C3F00D9B61E /* MONA.xcdatamodeld in Resources */,
 				7127CF85251935D4008B7955 /* LaunchScreen.storyboard in Resources */,
 				7127CF82251935D4008B7955 /* Assets.xcassets in Resources */,
 				7127CF7D251935D3008B7955 /* Main.storyboard in Resources */,
@@ -176,7 +177,6 @@
 			files = (
 				71EB0900251D12CC0023DD66 /* Position+CoreDataProperties.swift in Sources */,
 				71EB08FF251D12CC0023DD66 /* Position+CoreDataClass.swift in Sources */,
-				7127CF80251935D3008B7955 /* MONA.xcdatamodeld in Sources */,
 				71EB08F8251CEE210023DD66 /* OverviewViewController.swift in Sources */,
 				717896E5251BBA78001E3AD4 /* ExpensesViewController.swift in Sources */,
 				71A2398A251B9B8A0066C9FE /* MenuViewController.swift in Sources */,
