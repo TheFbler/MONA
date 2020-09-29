@@ -310,13 +310,25 @@
                     <view key="view" contentMode="scaleToFill" id="ZXc-Ky-jdn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icons by: https://icons8.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVT-gT-lPo">
+                                <rect key="frame" x="16" y="60" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vaj-Fu-raN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AVT-gT-lPo" firstAttribute="top" secondItem="vaj-Fu-raN" secondAttribute="top" constant="16" id="Qf7-uc-ua8"/>
+                            <constraint firstItem="AVT-gT-lPo" firstAttribute="leading" secondItem="vaj-Fu-raN" secondAttribute="leading" constant="16" id="fRS-HF-Ute"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6i5-Nu-tjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="2219"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="2218.5267857142858"/>
         </scene>
         <!--Expenses View Controller-->
         <scene sceneID="rq1-Nu-XBj">
