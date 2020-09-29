@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EarningsViewController: UIViewController {
+class EarningsViewController: ContainerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

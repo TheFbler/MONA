@@ -17,9 +17,7 @@ class ContainerViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // Beim Start die Übersicht anzeigen
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "OverviewViewController") as! OverviewViewController
-        self.view.addSubview(vc.view)
-        self.title = "Übersicht"
+        
     }
 
     @IBAction func userDidSwipe(_ sender: UISwipeGestureRecognizer) {
@@ -53,27 +51,53 @@ class ContainerViewController: UIViewController {
         switch menuType {
         case .overview:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "OverviewViewController") as! OverviewViewController
-            self.view.addSubview(vc.view)
             self.title = "Übersicht"
+            self.add(asChildViewController: vc)
         case .expenses:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "ExpensesViewController") as! ExpensesViewController
-            self.view.addSubview(vc.view)
             self.title = "Ausgaben"
+            self.add(asChildViewController: vc)
         case .category:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
-            self.view.addSubview(vc.view)
-            self.title = "Kategorien"
+            self.title = "Kategorie"
+            self.add(asChildViewController: vc)
         case .earnings:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "EarningsViewController") as! EarningsViewController
-            self.view.addSubview(vc.view)
             self.title = "Einnahmen"
+            self.add(asChildViewController: vc)
         case .about:
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
-            self.view.addSubview(vc.view)
             self.title = "Über"
+            self.add(asChildViewController: vc)
         default:
             break
         }
+    }
+    
+    private func add(asChildViewController viewController: UIViewController) {
+        // Add Child View Controller
+        addChild(viewController)
+
+        // Add Child View as Subview
+        view.addSubview(viewController.view)
+
+        // Configure Child View
+        viewController.view.frame = view.bounds
+        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+        // Notify Child View Controller
+        viewController.didMove(toParent: self)
+    }
+    
+    private func remove(asChildViewController viewController: UIViewController) {
+        // Notify Child View Controller
+        viewController.willMove(toParent: nil)
+
+        // Remove Child View From Superview
+        viewController.view.removeFromSuperview()
+
+        // Notify Child View Controller
+        viewController.removeFromParent()
     }
 
 }

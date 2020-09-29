@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CategoryViewController: UIViewController {
+class CategoryViewController: ContainerViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var categorys = [Category]()

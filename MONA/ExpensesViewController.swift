@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExpensesViewController: UIViewController {
+class ExpensesViewController: ContainerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OverviewViewController: UIViewController {
+class OverviewViewController: ContainerViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
