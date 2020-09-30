@@ -273,20 +273,32 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-Gl-XgJ">
+                                <rect key="frame" x="334" y="782" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M67-YW-s7P"/>
+                                    <constraint firstAttribute="width" constant="50" id="Nj4-Jg-uuy"/>
+                                </constraints>
+                                <state key="normal" image="plus">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RLl-ki-Tkz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RLl-ki-Tkz" firstAttribute="bottom" secondItem="NFq-Gl-XgJ" secondAttribute="bottom" constant="30" id="Aq7-l4-DtO"/>
                             <constraint firstItem="RLl-ki-Tkz" firstAttribute="trailing" secondItem="ALF-Bq-PfX" secondAttribute="trailing" id="Dma-Ky-KIp"/>
                             <constraint firstItem="ALF-Bq-PfX" firstAttribute="top" secondItem="RLl-ki-Tkz" secondAttribute="top" id="NFp-4e-oSJ"/>
                             <constraint firstItem="RLl-ki-Tkz" firstAttribute="bottom" secondItem="ALF-Bq-PfX" secondAttribute="bottom" id="SBq-1O-rKD"/>
                             <constraint firstItem="ALF-Bq-PfX" firstAttribute="leading" secondItem="RLl-ki-Tkz" secondAttribute="leading" id="e2f-it-lup"/>
+                            <constraint firstItem="RLl-ki-Tkz" firstAttribute="trailing" secondItem="NFq-Gl-XgJ" secondAttribute="trailing" constant="30" id="lNp-Qv-NLN"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCk-iT-o7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="850"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="849.77678571428567"/>
         </scene>
         <!--Overview View Controller-->
         <scene sceneID="k8h-il-Hih">
@@ -386,6 +398,7 @@
         <image name="income" width="50" height="50"/>
         <image name="menu" width="23" height="23"/>
         <image name="overview" width="50" height="50"/>
+        <image name="plus" width="50" height="50"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -406,6 +419,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
