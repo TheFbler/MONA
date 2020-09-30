@@ -14,6 +14,7 @@
 		7127CF7D251935D3008B7955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF7B251935D3008B7955 /* Main.storyboard */; };
 		7127CF82251935D4008B7955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF81251935D4008B7955 /* Assets.xcassets */; };
 		7127CF85251935D4008B7955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7127CF83251935D4008B7955 /* LaunchScreen.storyboard */; };
+		715E36312524E4A0001AAA89 /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E36302524E4A0001AAA89 /* CategoryDetailViewController.swift */; };
 		717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */; };
 		717896E5251BBA78001E3AD4 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896E4251BBA78001E3AD4 /* ExpensesViewController.swift */; };
 		717896E9251BC0EE001E3AD4 /* EarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717896E8251BC0EE001E3AD4 /* EarningsViewController.swift */; };
@@ -37,6 +38,7 @@
 		7127CF81251935D4008B7955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7127CF84251935D4008B7955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7127CF86251935D4008B7955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715E36302524E4A0001AAA89 /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		717896E1251BB1AF001E3AD4 /* SlideInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		717896E4251BBA78001E3AD4 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		717896E8251BC0EE001E3AD4 /* EarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				7127CF83251935D4008B7955 /* LaunchScreen.storyboard */,
 				7127CF86251935D4008B7955 /* Info.plist */,
 				7127CF7E251935D3008B7955 /* MONA.xcdatamodeld */,
+				715E36302524E4A0001AAA89 /* CategoryDetailViewController.swift */,
 			);
 			path = MONA;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				71EB0902251D12CC0023DD66 /* Category+CoreDataProperties.swift in Sources */,
 				717896E2251BB1AF001E3AD4 /* SlideInTransition.swift in Sources */,
 				717896E9251BC0EE001E3AD4 /* EarningsViewController.swift in Sources */,
+				715E36312524E4A0001AAA89 /* CategoryDetailViewController.swift in Sources */,
 				71EB0901251D12CC0023DD66 /* Category+CoreDataClass.swift in Sources */,
 				7127CF76251935D3008B7955 /* AppDelegate.swift in Sources */,
 				717896EC251BC0FC001E3AD4 /* CategoryViewController.swift in Sources */,
