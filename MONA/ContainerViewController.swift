@@ -18,6 +18,13 @@ class ContainerViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         // Beim Start die Übersicht anzeigen
         
+        //If self.isMember() Is needed because if you do not check what type self is then you would find yourself in a infinite loop due to the 
+        //ContainerViewController subclassing in CategoryViewController
+        if self.isMember(of: ContainerViewController.self){
+            let initialVC = self.storyboard!.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+            self.title = "Kategorie" //This can be done in CategoryViewController itself or
+            self.add(asChildViewController: initialVC)
+        }
     }
 
     @IBAction func userDidSwipe(_ sender: UISwipeGestureRecognizer) {
