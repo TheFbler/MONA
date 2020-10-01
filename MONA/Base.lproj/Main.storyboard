@@ -293,7 +293,7 @@
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zQ6-Ex-YOb" kind="presentation" id="AgX-Mo-Riu"/>
+                                    <segue destination="zQ6-Ex-YOb" kind="show" id="AgX-Mo-Riu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -363,6 +363,7 @@
                             <constraint firstItem="jhJ-qh-CG6" firstAttribute="centerX" secondItem="yMK-d0-wb2" secondAttribute="centerX" id="qge-Yk-tOT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1Ci-li-rua"/>
                     <connections>
                         <outlet property="categoryName" destination="fa0-db-u1t" id="wrN-IR-2cJ"/>
                     </connections>

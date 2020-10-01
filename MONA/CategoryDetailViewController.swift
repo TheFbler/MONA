@@ -19,10 +19,6 @@ class CategoryDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        
-    }
-    
     @IBAction func saveCategory(_ sender: UIButton) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
           
@@ -36,7 +32,6 @@ class CategoryDetailViewController: UIViewController {
           
         do {
             try managedContext.save()
-            self.dismiss(animated: true, completion: nil)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }

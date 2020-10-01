@@ -20,15 +20,13 @@ class CategoryViewController: ContainerViewController {
         // Do any additional setup after loading the view.
         tableView.dataSource = self
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        print("Test")
-    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
       
         loadData()
+        
+        tableView.reloadData()
     }
     
     func loadData() {
@@ -39,7 +37,7 @@ class CategoryViewController: ContainerViewController {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Category")
       
         do {
-            categorys = try managedContext.fetch(fetchRequest)
+            self.categorys = try managedContext.fetch(fetchRequest)
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
