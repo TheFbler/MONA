@@ -11,12 +11,17 @@ import CoreData
 
 class CategoryDetailViewController: UIViewController {
     
-    @IBOutlet weak var categoryName: UITextField!
+    @IBOutlet weak var categoryTxtFld: UITextField!
+    var categoryName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if(categoryName != "") {
+            categoryTxtFld.text = categoryName
+        }
     }
     
     @IBAction func saveCategory(_ sender: UIButton) {
@@ -28,7 +33,7 @@ class CategoryDetailViewController: UIViewController {
           
         let category = NSManagedObject(entity: entity, insertInto: managedContext)
           
-        category.setValue(categoryName.text, forKeyPath: "name")
+        category.setValue(categoryTxtFld.text, forKeyPath: "name")
           
         do {
             try managedContext.save()

@@ -106,7 +106,16 @@ class ContainerViewController: UIViewController {
         // Notify Child View Controller
         viewController.removeFromParent()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.source is CategoryViewController) {
+            let sVc = segue.source as? CategoryViewController
+            if(segue.destination is CategoryDetailViewController) {
+                let dVc = segue.destination as? CategoryDetailViewController
+                dVc?.categoryName = "Test Segue"
+            }
+        }
+    }
 }
 
 extension ContainerViewController: UIViewControllerTransitioningDelegate {
